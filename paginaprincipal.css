@@ -1,0 +1,593 @@
+﻿body {
+    background-image: url('assets/Logo MRM em fundo azul escuro.png');
+    /* define a imagem de fundo do elemento */
+    background-position: center;
+    /* posiciona a imagem de fundo no elemento */
+    background-repeat: no-repeat;
+    /* controla se a imagem de fundo se repete */
+    background-size: cover;
+    /* define o tamanho da imagem de fundo */
+    background-attachment: fixed;
+    /* define se o fundo rola com a pagina ou fica fixo */
+    color: white;
+    /* define a cor do texto */
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    /* define a familia tipografica usada no texto */
+    margin: 0;
+    /* define margem externa em todos os lados */
+    padding: 10px;
+    /* define espacamento interno em todos os lados */
+    min-height: 100vh;
+    /* define a altura minima do elemento */
+    line-height: 1.4;
+    /* define a altura da linha do texto */
+}
+
+* {
+    box-sizing: border-box;
+    /* define como largura e altura sao calculadas */
+}
+
+h1 {
+    text-align: center;
+    /* alinha horizontalmente o conteudo de texto */
+    font-size: 2.2rem;
+    /* define o tamanho da fonte */
+    margin-top: 0;
+    /* define a margem superior */
+    margin-bottom: 5px;
+    /* define a margem inferior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* aplica sombra ao texto */
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+    -webkit-background-clip: text;
+    /* recorta o fundo para o formato do texto em navegadores WebKit */
+    -webkit-text-fill-color: transparent;
+    /* define a cor de preenchimento do texto em navegadores WebKit */
+    background-clip: text;
+    /* define ate onde o fundo deve ser aplicado */
+}
+
+p {
+    font-size: 1rem;
+    /* define o tamanho da fonte */
+}
+
+h2 {
+    font-size: 1.4rem;
+    /* define o tamanho da fonte */
+    text-align: center;
+    /* alinha horizontalmente o conteudo de texto */
+    margin-top: 20px;
+    /* define a margem superior */
+    margin-bottom: 15px;
+    /* define a margem inferior */
+}
+
+h3 {
+    font-size: 1.3rem;
+    /* define o tamanho da fonte */
+}
+
+.subtitulo {
+    text-align: center;
+    /* alinha horizontalmente o conteudo de texto */
+    font-size: 1.1rem;
+    /* define o tamanho da fonte */
+    color: #e0e0e0;
+    /* define a cor do texto */
+    margin-bottom: 15px;
+    /* define a margem inferior */
+    font-style: italic;
+    /* define o estilo da fonte como normal ou italico */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* aplica sombra ao texto */
+}
+
+.sobremim {
+    text-align: justify;
+    /* alinha horizontalmente o conteudo de texto */
+    padding: 20px 1%;
+    /* define espacamento interno em todos os lados */
+
+}
+
+.page-header {
+    text-align: center;
+    /* alinha horizontalmente o conteudo de texto */
+    margin-bottom: 20px;
+    /* define a margem inferior */
+    padding: 20px;
+    /* define espacamento interno em todos os lados */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+    border-radius: 15px;
+    /* arredonda os cantos do elemento */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* aplica sombra ao redor do elemento */
+    backdrop-filter: blur(5px);
+    /* aplica efeito visual no fundo atras do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* define borda completa do elemento */
+    position: relative;
+    /* define o metodo de posicionamento do elemento */
+}
+
+.header-logo {
+    display: block;
+    /* define o tipo de exibicao do elemento */
+    margin: 0 auto 10px;
+    /* define margem externa em todos os lados */
+    width: 300px;
+    /* define a largura do elemento */
+    max-width: 100%;
+    /* define a largura maxima do elemento */
+    height: auto;
+    /* define a altura do elemento */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    /* aplica efeitos graficos como brilho e sombra */
+    transition: transform 0.3s ease;
+    /* define a animacao entre estados de estilo */
+}
+
+.header-logo:hover {
+    transform: scale(1.02);
+    /* aplica transformacoes como escala e translacao */
+}
+
+.profile-photo {
+    display: block;
+    /* define o tipo de exibicao do elemento */
+    margin: 0 auto 10px;
+    /* define margem externa em todos os lados */
+    width: 300px;
+    /* define a largura do elemento */
+    max-width: 100%;
+    /* define a largura maxima do elemento */
+    height: auto;
+    /* define a altura do elemento */
+    opacity: 0.9;
+    /* define o nivel de transparencia do elemento */
+    border-radius: 15px;
+    /* arredonda os cantos do elemento */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    /* aplica sombra ao redor do elemento */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* define a animacao entre estados de estilo */
+}
+
+.profile-photo:hover {
+    transform: scale(1.02);
+    /* aplica transformacoes como escala e translacao */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    /* aplica sombra ao redor do elemento */
+}
+
+main {
+    max-width: 1000px;
+    /* define a largura maxima do elemento */
+    margin: 0 auto;
+    /* define margem externa em todos os lados */
+    width: 100%;
+    /* define a largura do elemento */
+}
+
+.section-title {
+    font-size: 1.6rem;
+    /* define o tamanho da fonte */
+    margin-top: 30px;
+    /* define a margem superior */
+    margin-bottom: 15px;
+    /* define a margem inferior */
+    padding-bottom: 5px;
+    /* define o valor da propriedade padding-bottom */
+    border-bottom: 3px solid rgba(0, 26, 102, 0.8);
+    /* define a borda inferior */
+    color: #ffffff;
+    /* define a cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* aplica sombra ao texto */
+    position: relative;
+    /* define o metodo de posicionamento do elemento */
+}
+
+.section-title::after {
+    content: '';
+    /* define conteudo gerado por pseudo-elemento */
+    position: absolute;
+    /* define o metodo de posicionamento do elemento */
+    bottom: -3px;
+    /* define distancia da borda inferior */
+    left: 0;
+    /* define distancia da borda esquerda */
+    width: 100%;
+    /* define a largura do elemento */
+    height: 3px;
+    /* define a altura do elemento */
+    background: linear-gradient(90deg, rgba(0, 26, 102, 0.8) 0%, rgba(0, 26, 102, 0.4) 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+}
+
+.about-section {
+    margin-bottom: 20px;
+    /* define a margem inferior */
+    padding: 20px;
+    /* define espacamento interno em todos os lados */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+    border-radius: 12px;
+    /* arredonda os cantos do elemento */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* aplica sombra ao redor do elemento */
+    backdrop-filter: blur(5px);
+    /* aplica efeito visual no fundo atras do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* define borda completa do elemento */
+}
+
+.about-text {
+    text-align: justify;
+    /* alinha horizontalmente o conteudo de texto */
+    padding: 0 2%;
+    /* define espacamento interno em todos os lados */
+    font-size: 0.95rem;
+    /* define o tamanho da fonte */
+    line-height: 1.6;
+    /* define a altura da linha do texto */
+    color: #f0f0f0;
+    /* define a cor do texto */
+}
+
+.gallery-section {
+    margin: 20px 0;
+    /* define margem externa em todos os lados */
+}
+
+.photo-gallery {
+    list-style: none;
+    /* remove marcadores de lista */
+    display: flex;
+    /* define o tipo de exibicao do elemento */
+    flex-direction: row;
+    /* define a direcao principal no flexbox */
+    flex-wrap: nowrap;
+    /* define se os itens flex quebram para outra linha */
+    align-items: center;
+    /* alinha os itens no eixo transversal do container */
+    justify-content: center;
+    /* alinha os itens no eixo principal do container */
+    gap: clamp(4px, 1.2vw, 12px);
+    /* define espaco entre itens de layout */
+    width: 100%;
+    /* define a largura do elemento */
+    max-width: 100%;
+    /* define a largura maxima do elemento */
+    margin: 0 auto;
+    /* define margem externa em todos os lados */
+    padding: 0;
+    /* define espacamento interno em todos os lados */
+}
+
+.photo-gallery li {
+    list-style: none;
+    /* remove marcadores de lista */
+    display: inline-flex;
+    /* define o tipo de exibicao do elemento */
+    flex: 1 1 0;
+    /* define crescimento, encolhimento e base no flexbox */
+    min-width: 0;
+    /* define a largura minima do elemento */
+    width: 100%;
+    /* define a largura do elemento */
+}
+
+.photo-gallery img {
+    width: 100%;
+    /* define a largura do elemento */
+    aspect-ratio: 1 / 1;
+    /* define proporcao fixa da imagem */
+    height: auto;
+    /* define a altura do elemento */
+    opacity: 0.85;
+    /* define o nivel de transparencia do elemento */
+    border-radius: 8px;
+    /* arredonda os cantos do elemento */
+    object-fit: cover;
+    /* define como conteudo substituido se ajusta ao container */
+    transition: all 0.3s ease;
+    /* define a animacao entre estados de estilo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    /* aplica sombra ao redor do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* define borda completa do elemento */
+    display: block;
+    /* define o tipo de exibicao do elemento */
+}
+
+.photo-gallery img:hover {
+    opacity: 1;
+    /* define o nivel de transparencia do elemento */
+    transform: scale(1.05);
+    /* aplica transformacoes como escala e translacao */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    /* aplica sombra ao redor do elemento */
+}
+
+.education-section,
+.projects-section {
+    margin-bottom: 25px;
+    /* define a margem inferior */
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 500px;
+}
+
+.education-item,
+.project-item {
+    margin-bottom: 15px;
+    /* define a margem inferior */
+    padding: 15px;
+    /* define espacamento interno em todos os lados */
+    border-left: 4px solid rgba(0, 26, 102, 0.8);
+    /* define a borda esquerda */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+    border-radius: 8px;
+    /* arredonda os cantos do elemento */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* aplica sombra ao redor do elemento */
+    transition: all 0.3s ease;
+    /* define a animacao entre estados de estilo */
+    backdrop-filter: blur(5px);
+    /* aplica efeito visual no fundo atras do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* define borda completa do elemento */
+}
+
+.education-item:hover,
+.project-item:hover {
+    background: linear-gradient(135deg, rgba(0, 26, 102, 0.2) 0%, rgba(0, 26, 102, 0.1) 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+    transform: translateX(5px);
+    /* aplica transformacoes como escala e translacao */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    /* aplica sombra ao redor do elemento */
+}
+
+.education-school,
+.project-title {
+    color: #001a66;
+    /* define a cor do texto */
+    font-size: 1.1rem;
+    /* define o tamanho da fonte */
+    margin-top: 0;
+    /* define a margem superior */
+}
+
+.education-year {
+    color: #b0b0b0;
+    /* define a cor do texto */
+    font-style: italic;
+    /* define o estilo da fonte como normal ou italico */
+    margin: 3px 0 10px 0;
+    /* define margem externa em todos os lados */
+}
+
+.education-description,
+.project-description {
+    text-align: justify;
+    /* alinha horizontalmente o conteudo de texto */
+    line-height: 1.5;
+    /* define a altura da linha do texto */
+    color: #e0e0e0;
+    /* define a cor do texto */
+    font-size: 0.9rem;
+    /* define o tamanho da fonte */
+}
+
+footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* aplica fundo com cor, gradiente ou imagem */
+    margin-top: 30px;
+    /* define a margem superior */
+    padding: 20px 10px;
+    /* define espacamento interno em todos os lados */
+    width: 100%;
+    /* define a largura do elemento */
+    margin-left: 0;
+    /* define a margem esquerda */
+    margin-right: 0;
+    /* define a margem direita */
+    box-sizing: border-box;
+    /* define como largura e altura sao calculadas */
+    border-top: 2px solid rgba(0, 26, 102, 0.6);
+    /* define a borda superior */
+    backdrop-filter: blur(10px);
+    /* aplica efeito visual no fundo atras do elemento */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+    /* aplica sombra ao redor do elemento */
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 380px;
+}
+
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #001a66;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+footer a {
+    color: #b0d4ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+    margin-bottom: 3px;
+    overflow-wrap: anywhere;
+}
+
+footer a:hover {
+    color: #001a66;
+    text-decoration: underline;
+    transform: translateX(3px);
+}
+
+footer span {
+    color: #ccc;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-weight: 500;
+}
+
+.footer-icon {
+    width: 40px;
+    height: auto;
+    margin-bottom: 8px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content > div {
+    min-width: 0;
+}
+
+.footer-content > div img {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    main {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 8px;
+    }
+
+    .page-header {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .header-logo,
+    .profile-photo {
+        width: 240px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 6px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.35rem;
+        margin-top: 20px;
+    }
+
+    .about-section,
+    .education-item,
+    .project-item {
+        padding: 14px;
+    }
+
+    .photo-gallery {
+        gap: clamp(3px, 1vw, 8px);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .footer-icon {
+        width: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo,
+    .profile-photo {
+        width: 190px;
+    }
+
+    .about-text,
+    .education-description,
+    .project-description {
+        font-size: 0.88rem;
+    }
+
+    footer {
+        padding: 16px 8px;
+    }
+}
+
+@media (hover: none) {
+    .photo-gallery img:hover,
+    .education-item:hover,
+    .project-item:hover,
+    .profile-photo:hover,
+    .header-logo:hover,
+    .footer-icon:hover,
+    footer a:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

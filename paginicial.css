@@ -1,0 +1,327 @@
+﻿/* ===========================================
+    ESTILOS GERAIS - Página de Acesso
+    =========================================== */
+
+body {
+    /* Fundo decorativo */
+    background-image: url('assets/Logo MRM em fundo azul escuro.png'); /* define a imagem de fundo do elemento */
+    background-position: center; /* posiciona a imagem de fundo no elemento */
+    background-repeat: no-repeat; /* controla se a imagem de fundo se repete */
+    background-size: cover; /* define o tamanho da imagem de fundo */
+    background-attachment: fixed; /* define se o fundo rola com a pagina ou fica fixo */
+
+    /* Tipografia padrão */
+    color: white; /* define a cor do texto */
+    font-family: 'Arial', sans-serif; /* define a familia tipografica usada no texto */
+    margin: 0; /* define margem externa em todos os lados */
+    padding: 20px; /* define espacamento interno em todos os lados */
+    min-height: 100vh; /* define a altura minima do elemento */
+    display: flex; /* define o tipo de exibicao do elemento */
+    flex-direction: column; /* define a direcao principal no flexbox */
+    overflow-x: hidden; /* controla rolagem horizontal */
+}
+
+/* ===========================================
+    CABEÇALHO - Logo e Título
+    =========================================== */
+
+header {
+    margin-bottom: 30px; /* define a margem inferior */
+    position: relative; /* define o metodo de posicionamento do elemento */
+}
+
+figure {
+    margin: 0; /* define margem externa em todos os lados */
+}
+
+h1 {
+    text-align: center; /* alinha horizontalmente o conteudo de texto */
+    font-size: 2.2rem; /* define o tamanho da fonte */
+    margin: 0 0 20px 0; /* define margem externa em todos os lados */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* aplica sombra ao texto */
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%); /* aplica fundo com cor, gradiente ou imagem */
+    -webkit-background-clip: text; /* recorta o fundo para o formato do texto em navegadores WebKit */
+    -webkit-text-fill-color: transparent; /* define a cor de preenchimento do texto em navegadores WebKit */
+    background-clip: text; /* define ate onde o fundo deve ser aplicado */
+}
+
+img.logo {
+    display: block; /* define o tipo de exibicao do elemento */
+    margin: 0 auto 20px; /* define margem externa em todos os lados */
+    width: 300px; /* define a largura do elemento */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* aplica efeitos graficos como brilho e sombra */
+    transition: transform 0.3s ease; /* define a animacao entre estados de estilo */
+    max-width: 100%; /* define a largura maxima do elemento */
+}
+
+img.logo:hover {
+    transform: scale(1.02); /* aplica transformacoes como escala e translacao */
+}
+
+/* ===========================================
+    SEÇÃO DE ACESSO - Formulário Principal
+    =========================================== */
+
+main {
+    flex: 1; /* define crescimento, encolhimento e base no flexbox */
+    display: flex; /* define o tipo de exibicao do elemento */
+    flex-direction: column; /* define a direcao principal no flexbox */
+    justify-content: center; /* alinha os itens no eixo principal do container */
+}
+
+section.login {
+    max-width: 400px; /* define a largura maxima do elemento */
+    margin: 0 auto; /* define margem externa em todos os lados */
+    padding: 20px 28px; /* define espacamento interno em todos os lados */
+    background: linear-gradient(rgba(255, 255, 255, 0.05) 100%); /* aplica fundo com cor, gradiente ou imagem */
+    border-radius: 12px; /* arredonda os cantos do elemento */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* aplica sombra ao redor do elemento */
+    backdrop-filter: blur(10px); /* aplica efeito visual no fundo atras do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* define borda completa do elemento */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* define a animacao entre estados de estilo */
+}
+
+section.login,
+footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 300px;
+}
+
+section.login:hover {
+    transform: translateY(-2px); /* aplica transformacoes como escala e translacao */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* aplica sombra ao redor do elemento */
+}
+
+section.login h2 {
+    text-align: center; /* alinha horizontalmente o conteudo de texto */
+    font-size: 1.5rem; /* define o tamanho da fonte */
+    margin: 0 0 20px 0; /* define margem externa em todos os lados */
+}
+
+fieldset {
+    border: none; /* define borda completa do elemento */
+    padding: 0; /* define espacamento interno em todos os lados */
+    margin: 0; /* define margem externa em todos os lados */
+}
+
+legend {
+    font-weight: bold; /* define a espessura da fonte */
+    margin-bottom: 15px; /* define a margem inferior */
+    color: #e0e0e0; /* define a cor do texto */
+}
+
+form {
+    display: flex; /* define o tipo de exibicao do elemento */
+    flex-direction: column; /* define a direcao principal no flexbox */
+}
+
+main.main {
+    max-width: 400px; /* define a largura maxima do elemento */
+    margin: auto; /* define margem externa em todos os lados */
+    padding: 20px 28px; /* define espacamento interno em todos os lados */
+    background: linear-gradient(rgba(255, 255, 255, 0.05) 100%); /* aplica fundo com cor, gradiente ou imagem */
+    border-radius: 12px; /* arredonda os cantos do elemento */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* aplica sombra ao redor do elemento */
+    backdrop-filter: blur(10px); /* aplica efeito visual no fundo atras do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* define borda completa do elemento */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* define a animacao entre estados de estilo */
+}
+
+main.main:hover {
+    transform: translateY(-2px); /* aplica transformacoes como escala e translacao */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* aplica sombra ao redor do elemento */
+}
+
+main.main form {
+    display: flex; /* define o tipo de exibicao do elemento */
+    flex-direction: column; /* define a direcao principal no flexbox */
+}
+
+/* ===========================================
+    CAMPOS DE ENTRADA - Inputs do formulário
+    =========================================== */
+
+.form-group {
+    margin-bottom: 15px; /* define a margem inferior */
+    display: flex; /* define o tipo de exibicao do elemento */
+    flex-direction: column; /* define a direcao principal no flexbox */
+}
+
+.form-group label {
+    margin-bottom: 5px; /* define a margem inferior */
+    font-weight: bold; /* define a espessura da fonte */
+    color: #e0e0e0; /* define a cor do texto */
+    font-size: 0.9rem; /* define o tamanho da fonte */
+    text-transform: uppercase; /* transforma o texto para maiusculas, minusculas etc */
+    letter-spacing: 0.5px; /* define o espacamento entre letras */
+}
+
+.form-group input {
+    padding: 8px; /* define espacamento interno em todos os lados */
+    border-radius: 6px; /* arredonda os cantos do elemento */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* define borda completa do elemento */
+    font-size: 14px; /* define o tamanho da fonte */
+    background-color: #15263b; /* define a cor de fundo do elemento */
+    color: #ffffff; /* define a cor do texto */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* define a animacao entre estados de estilo */
+    width: 100%; /* define a largura do elemento */
+}
+
+.form-group input:focus {
+    outline: none; /* define contorno externo do elemento */
+    border-color: rgba(0, 26, 102, 0.5); /* define a cor da borda */
+    box-shadow: 0 0 0 3px rgba(0, 26, 102, 0.1); /* aplica sombra ao redor do elemento */
+    background-color: #15263b; /* define a cor de fundo do elemento */
+}
+
+/* ===========================================
+    AÇÕES DO FORMULÁRIO - Botões de submit/reset
+    =========================================== */
+
+.form-actions {
+    display: flex; /* define o tipo de exibicao do elemento */
+    gap: 10px; /* define espaco entre itens de layout */
+    margin-top: 20px; /* define a margem superior */
+}
+
+.form-actions button {
+    flex: 1; /* define crescimento, encolhimento e base no flexbox */
+    padding: 10px; /* define espacamento interno em todos os lados */
+    cursor: pointer; /* define o tipo de cursor do mouse */
+    font-size: 14px; /* define o tamanho da fonte */
+    border: none; /* define borda completa do elemento */
+    font-weight: bold; /* define a espessura da fonte */
+    border-radius: 12px; /* arredonda os cantos do elemento */
+    transition: all 0.3s ease; /* define a animacao entre estados de estilo */
+    text-transform: uppercase; /* transforma o texto para maiusculas, minusculas etc */
+    letter-spacing: 0.5px; /* define o espacamento entre letras */
+}
+
+.form-actions button:hover {
+    transform: translateY(-1px); /* aplica transformacoes como escala e translacao */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* aplica sombra ao redor do elemento */
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #00aa00 0%, #008800 100%); /* aplica fundo com cor, gradiente ou imagem */
+    color: white; /* define a cor do texto */
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #00cc00 0%, #00aa00 100%); /* aplica fundo com cor, gradiente ou imagem */
+}
+
+button[type="reset"] {
+    background: linear-gradient(135deg, #cc0000 0%, #aa0000 100%); /* aplica fundo com cor, gradiente ou imagem */
+    color: white; /* define a cor do texto */
+}
+
+button[type="reset"]:hover {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%); /* aplica fundo com cor, gradiente ou imagem */
+}
+
+/* ===========================================
+    RODAPÉ - Informações e Direitos Autorais
+    =========================================== */
+
+footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%); /* aplica fundo com cor, gradiente ou imagem */
+    margin-top: 100px; /* define a margem superior */
+    padding: 20px; /* define espacamento interno em todos os lados */
+    width: 100%; /* define a largura do elemento */
+    box-sizing: border-box; /* define como largura e altura sao calculadas */
+    text-align: center; /* alinha horizontalmente o conteudo de texto */
+    border-top: 2px solid rgba(0, 26, 102, 0.6); /* define a borda superior */
+    backdrop-filter: blur(10px); /* aplica efeito visual no fundo atras do elemento */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5); /* aplica sombra ao redor do elemento */
+}
+
+footer p {
+    margin: 0; /* define margem externa em todos os lados */
+    color: #e0e0e0; /* define a cor do texto */
+    font-size: 0.9rem; /* define o tamanho da fonte */
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 14px; /* define espacamento interno em todos os lados */
+    }
+
+    h1 {
+        font-size: 2rem; /* define o tamanho da fonte */
+    }
+
+    section.login,
+    main.main {
+        max-width: 520px; /* define a largura maxima do elemento */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* define espacamento interno em todos os lados */
+        background-attachment: scroll; /* define se o fundo rola com a pagina ou fica fixo */
+    }
+
+    img.logo {
+        width: 220px; /* define a largura do elemento */
+    }
+
+    h1 {
+        font-size: 1.7rem; /* define o tamanho da fonte */
+    }
+
+    section.login,
+    main.main {
+        padding: 18px 16px; /* define espacamento interno em todos os lados */
+    }
+
+    .form-actions {
+        flex-direction: column; /* define a direcao principal no flexbox */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px; /* define espacamento interno em todos os lados */
+    }
+
+    header {
+        margin-bottom: 20px; /* define a margem inferior */
+    }
+
+    img.logo {
+        width: 180px; /* define a largura do elemento */
+    }
+
+    h1 {
+        font-size: 1.45rem; /* define o tamanho da fonte */
+    }
+
+    section.login h2 {
+        font-size: 1.3rem; /* define o tamanho da fonte */
+    }
+
+    footer {
+        margin-top: 60px; /* define a margem superior */
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (hover: none) {
+    section.login:hover,
+    main.main:hover,
+    img.logo:hover,
+    .form-actions button:hover {
+        transform: none; /* aplica transformacoes como escala e translacao */
+    }
+}
